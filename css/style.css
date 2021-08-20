@@ -1,0 +1,376 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html{
+    -webkit-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+:root{
+    --dark: #0A1931;
+    --light: #EFEFEF;
+    --blue: #0D2D3E;
+    --red: #FF2143;
+    --white: #ffffff;
+    --gray: #484141;
+    --light-sky-blue: #E4F5FF;
+    --font12: 12px;
+    --padding: 10px 20px;
+    --padding010: 0 10px;
+    --padding150: 15px 0;
+}
+
+
+.btn-custom{
+    background-image: radial-gradient(circle at center center, transparent,rgb(10,25,49)),repeating-linear-gradient(135deg, rgb(10,25,49) 0px, rgb(10,25,49) 2px,transparent 2px, transparent 10px,rgb(10,25,49) 10px, rgb(10,25,49) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgba(211,211,211, 0.03) 0px, rgba(211,211,211, 0.03) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(10,25,49),rgb(10,25,49));
+    color:#D5EEBB; 
+    cursor: pointer;
+    border-radius: 0;
+}
+.text-custom-dark{
+    color: var(--dark);
+    
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.text-custom-light{
+    color: #D5EEBB;
+}
+.bg-custom-light{
+    background-color: var(--light);
+}
+.bg-dark{
+    background:var(--dark) !important;
+}
+
+.navbar{
+    align-items: flex-end;
+}
+.nav-link{
+    color: #D5EEBB!important;
+}
+.nav-link:hover{
+    color: white!important;
+}
+.nav-link.text-dark{
+    color: var(--dark)!important;
+}
+.nav-link.text-dark:hover{
+    color: black!important;
+}
+#collapsibleNavbar{
+    justify-content: flex-end!important;
+}
+
+
+#menu{
+   box-shadow: 0 1px 8px #ccc;
+   z-index: 3;
+}
+
+#showcase{
+    height: 500px;
+    background-image: radial-gradient(circle at center center, transparent,rgb(10,25,49)),repeating-linear-gradient(135deg, rgb(10,25,49) 0px, rgb(10,25,49) 2px,transparent 2px, transparent 10px,rgb(10,25,49) 10px, rgb(10,25,49) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgba(211,211,211, 0.03) 0px, rgba(211,211,211, 0.03) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(10,25,49),rgb(10,25,49));
+    
+}
+#showcase .image{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #D5EEBB;
+    margin: 0;
+    margin: auto;
+}
+#showcase .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    padding: 10px;
+}
+#showcase .show-case-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.text-custom{
+    color: #D5EEBB;
+}
+#showcase .showcase-footer{
+    margin-top: -50px;
+    text-align: center;
+}
+
+
+
+#works{
+    padding: 10px;
+    width: 98%;
+}
+#works .f-cards{
+    padding: 0;
+}
+#works .f-cards .f-card{
+    padding: 10px 20px;
+    position: relative;
+    margin-bottom: 100px;
+}
+#works .f-cards .f-card .f-card-footer{
+    background-image: radial-gradient(circle at center center, transparent,rgb(10,25,49)),repeating-linear-gradient(135deg, rgb(10,25,49) 0px, rgb(10,25,49) 2px,transparent 2px, transparent 10px,rgb(10,25,49) 10px, rgb(10,25,49) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgba(211,211,211, 0.03) 0px, rgba(211,211,211, 0.03) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(10,25,49),rgb(10,25,49));
+    margin-top: -30px;
+    padding: 10px 15px;
+    position: absolute;
+    width: 95%;
+    
+    
+}
+
+#works .f-cards .f-card .f-card-footer p{
+    margin-bottom: 3px;
+}
+  
+
+
+
+#tab-works .nav-tabs{
+    border: none;
+}
+#tab-works .nav li a{
+    float: left;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--secondary);
+}
+#tab-works .nav li a.active{
+    color: var(--dark);
+}
+#tab-works .nav li a:hover{
+    color: var(--dark);
+}
+
+#tab-works .project-info{
+    background-color: #0A1931;
+}
+
+
+
+
+#services,#working,#feature,#team{
+    padding: var(--padding150);
+    margin-top: 40px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.title .border{
+    background: var(--red);
+    width: 50px;
+    height: 2px;
+    border: none!important;
+    margin-bottom: 13px;
+    margin-right: 10px;
+}
+#services .heading{
+    color: var(--blue);
+}
+#services .cards{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#services .cards .card{
+    background: #F7F7F7;
+    height: 400px;
+    padding: 10px;
+    border: none;
+}
+#services .cards .card .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    background: var(--white);
+    position: relative;
+    
+}
+
+
+#services .cards .card .card-body .card-container, #services .cards .card .card-body .bg{
+    background: var(--white);
+    position: absolute;
+    height: 93%;
+    width: 92%;
+    border-bottom: 1px solid var(--dark)!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+/* if you want white background and another item just following class*/
+#services .cards .card .card-body .bg{
+    background-image: radial-gradient(circle at center center, transparent,rgb(10,25,49)),repeating-linear-gradient(135deg, rgb(10,25,49) 0px, rgb(10,25,49) 2px,transparent 2px, transparent 10px,rgb(10,25,49) 10px, rgb(10,25,49) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgba(211,211,211, 0.03) 0px, rgba(211,211,211, 0.03) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(10,25,49),rgb(10,25,49));
+    color: #D5EEBB;
+}
+#services .cards .card .card-body .card-container .icon, #services .cards .card .card-body .bg .icon{
+    margin-bottom: 40px;
+}
+#services .cards .card .card-body .card-container .icon i{
+    font-size: 70px;
+}
+#services .cards .card .card-body .bg .icon i{
+    font-size: 70px;
+    color: #D5EEBB;
+}
+
+.progress{
+    bbackground: white;
+    bborder: 1px solid var(--dark);
+}
+
+.progress-bar{
+    background-image: radial-gradient(circle at center center, transparent,rgb(10,25,49)),repeating-linear-gradient(135deg, rgb(10,25,49) 0px, rgb(10,25,49) 2px,transparent 2px, transparent 10px,rgb(10,25,49) 10px, rgb(10,25,49) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgba(211,211,211, 0.03) 0px, rgba(211,211,211, 0.03) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(10,25,49),rgb(10,25,49));
+}
+
+#skill-section .tecnical-skill .name{
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+#skill-section .professional-skill .p-skill{
+    margin: 30px 0px;
+}
+
+#skill-section .professional-skill .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#skill-section .professional-skill .box .parcentage{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+#skill-section .professional-skill .box .parcentage svg circle{
+    fill: none;
+    stroke:var(--dark);
+    stroke-width: 5px;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+#skill-section .professional-skill .w-skill .box .parcentage svg circle:nth-child(1){
+    stroke: #ededed;
+    stroke-dashoffset: 0;
+}
+#skill-section .professional-skill .w-skill .box .parcentage svg circle:nth-child(2){
+    stroke: var(--dark);
+    stroke-dashoffset: calc(440 - (440*80)/100);
+}
+
+#skill-section .professional-skill .wd-skill .box .parcentage svg circle:nth-child(1){
+    stroke: #ededed;
+    stroke-dashoffset: 0;
+}
+#skill-section .professional-skill .wd-skill .box .parcentage svg circle:nth-child(2){
+    stroke: var(--dark);
+    stroke-dashoffset: calc(440 - (440*90)/100);
+}
+
+
+#skill-section .professional-skill .ui-skill .box .parcentage svg circle:nth-child(1){
+    stroke: #ededed;
+    stroke-dashoffset: 0;
+}
+#skill-section .professional-skill .ui-skill .box .parcentage svg circle:nth-child(2){
+    stroke: var(--dark);
+    stroke-dashoffset: calc(440 - (440*70)/100);
+}
+
+#skill-section .professional-skill .box .number{
+    position: absolute;
+    font-size: 40px;
+}
+
+
+
+
+.owl-carousel{
+    position: relative;
+}
+.owl-carousel .owl-nav{
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    
+}
+.owl-carousel .owl-nav:hover i{
+    color: var(--dark);
+    padding-left: 30px; 
+    padding-right: 30px;
+}
+.owl-carousel .owl-nav i{
+   color: #ccc;
+   font-size: 20px;
+   padding: 20px;
+   transition: padding 0.3s ease-in-out;
+}
+.owl-carousel .owl-nav button{
+    outline: none;
+}
+.owl-carousel .owl-nav .owl-next{
+    float: right;
+    padding: 10px;
+}
+#qutation{
+    
+}
+#qutation .qutation-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#qutation .qutation-item .qutation-body{
+    text-align: center;
+    padding: 40px 100px;
+}
+#qutation .qutation-item .qutation-body .image{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin: 10px auto;
+}
+#qutation .qutation-item .qutation-body .image img{
+    border-radius: 50%;
+}
+
+#qutation .qutation-item .qutation-body .quote{
+    font-size: 20px;
+}
+
+
+
+
+#footer{
+    background-image: radial-gradient(circle at center center, transparent,rgb(10,25,49)),repeating-linear-gradient(135deg, rgb(10,25,49) 0px, rgb(10,25,49) 2px,transparent 2px, transparent 10px,rgb(10,25,49) 10px, rgb(10,25,49) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgba(211,211,211, 0.03) 0px, rgba(211,211,211, 0.03) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(10,25,49),rgb(10,25,49));
+}

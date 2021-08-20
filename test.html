@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+
+        .box svg {
+            position: relative;
+            width: 150px;
+            height: 150px;
+        }
+
+        .box svg circle {
+            fill: none;
+            stroke-width: 5px;
+            stroke: aqua;
+            transform: translate(5px, 5px);
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+        }
+
+        .box svg circle:nth-child(1) {
+            stroke-dashoffset: 0;
+            stroke: #ccc;
+        }
+
+        .box svg circle:nth-child(2) {
+            stroke-dashoffset: calc(440 - (440 * 99)/100);
+            stroke: black;
+        }
+
+        .box .parcentage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box .parcentage .number {
+            position: absolute;
+            font-size: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="parcentage">
+            <svg>
+                <circle cx=70 cy=70 r=70></circle>
+                <circle cx=70 cy=70 r=70></circle>
+            </svg>
+            <div class="number">
+                80%
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function find_max(nums) {
+            let max_num = Number.NEGATIVE_INFINITY; // smaller than all other numbers
+            for (let num of nums) {
+                if (num > max_num) {
+                    // (Fill in the missing line here)
+                    num = max_num;
+                }
+            }
+            return max_num;
+        }
+
+        console.log(find_max(7))
+
+        function language(index, arr) {
+
+            if (i < arr.length) {
+                i++;
+                const create = document.createElement('li');
+                create.innerText = arr[index];
+                const parent = document.getElementById('add-hello');
+                parent.appendChild(create);
+            } else {
+                document.getElementById('add').setAttribute('disabled', true);
+            }
+        }
+
+        var i = 0;
+        var course = ['a','b','c','d']
+        document.getElementById('add').addEventListener("click", function () {
+            language(i, course);
+        }
+
+    </script>
+</body>
+
+</html>
